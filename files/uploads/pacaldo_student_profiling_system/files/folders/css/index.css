@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.card {
+    display: flex;
+    width: 800px; /* Reduced width of card */
+    height: 685px; /* Reduced height of card */
+    background-color: mediumaquamarine;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.form-section {
+    flex: 1;
+    padding: 20px 30px; /* Reduced padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.form-section .title {
+    font-size: 24px; /* Reduced font size */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form-section h2 {
+    font-size: 20px; /* Reduced font size */
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 12px; /* Reduced margin */
+    padding: 5px 0;
+}
+
+.input-container label {
+    font-weight: bold;
+    color: #555;
+    width: 35%;
+    text-align: right;
+    margin-right: 10px;
+}
+
+input[type="text"], input[type="password"], select {
+    width: 55%; /* Reduced width of input fields */
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f7f8fa;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, select:focus {
+    outline: none;
+    border-color: #2575fc;
+    box-shadow: 0 0 8px rgba(102, 147, 225, 0.3);
+}
+
+button {
+    width: 100%; /* Reduced button width */
+    padding: 10px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px; /* Reduced margin-top for better alignment */
+}
+
+button:hover {
+    background: linear-gradient(135deg, #4e0b9d, #1b5fb8);
+    box-shadow: 0px 6px 12px rgba(0, 91, 179, 0.4);
+}
+
+p {
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+}
+
+a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #1b5fb8;
+    text-decoration: underline;
+}
+
+.logo-section {
+    flex: 0.6;
+    background-color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.logo-section img {
+    max-width: 80%; /* Adjusted logo size */
+    max-height: 80%;
+    border-radius: 100px;
+}
+
+#register-section {
+    display: none;
+}
+
+/* Style adjustments to prevent input fields from getting too large */
+.form-section input,
+.form-section select,
+.form-section button {
+    max-width: 350px; /* Prevents form elements from getting too wide */
+}
